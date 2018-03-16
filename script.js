@@ -1,7 +1,8 @@
-//définition de la constante
+//définition de la constante "carré"
 const carre = document.getElementById('carre');
-//définition de l'événement auquel la modification va se déclencher
+// définition de la constante "haut du carré"
 const carreTop = carre.offsetTop;
+//définition de l'événement auquel la modification va se déclencher
 document.addEventListener('keydown', function mouvement(evenement){
     //console.log("coucou"); //pour tester si l'événement est bien pris en compte
     var stepMove = 10;
