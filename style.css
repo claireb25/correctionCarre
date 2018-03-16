@@ -5,3 +5,13 @@
     bottom: 0px;
     background-color: cornflowerblue;
 }
+
+.style-button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 25px;
+
+}

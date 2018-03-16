@@ -1,4 +1,4 @@
-//définition de la constante "carré"
+/*//définition de la constante "carré"
 const carre = document.getElementById('carre');
 // définition de la constante "haut du carré"
 const carreTop = carre.offsetTop;
@@ -15,11 +15,29 @@ document.addEventListener('keydown', function mouvement(evenement){
     }
     if (evenement.keyCode ==40){
         if (carre.offsetTop < carreTop){
-            console.log(carreTop);
+          //  console.log(carreTop);
             carre.style.top = carre.offsetTop + stepMove + 'px';
         }
     }
    
 }
 
+)*/
+
+const squareHeight = document.getElementById('carre').offsetHeight;
+var carre = document.getElementById('carre');
+
+const bouton = document.getElementById('button1');
+bouton.addEventListener('click', function addHeight(){
+    if (carre.offsetHeight <= 300){
+        carre.style.height = carre.offsetHeight + 10 + 'px';
+    }
+    else {
+        carre.style.height = squareHeight + 'px';
+    }
+  
+}
 )
+
+const element = document.getElementById('carre');
+console.log(element);
